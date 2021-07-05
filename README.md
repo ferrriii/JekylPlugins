@@ -1,2 +1,20 @@
 # JekylPlugins
-Some plugins for Jekyll
+Some plugins for [Jekyll](https://jekyllrb.com/) (liquid)
+
+## Filter to Add Property to Hash (`addProp.rb`)
+Jekyl (liquid) doesn't allow to to assign a value to a new property of any hash like posts.
+Use  `addProp.rb` to be able to add keys to hashes.
+
+Syntax:
+```
+addProp: key, value
+```
+
+Example:
+Create an object with custom key values.
+```
+{% assign emptyObject = "" | split: ',' %}
+{% assign emptyObject = emptyObject | addProp: "key1", "value1" %}
+{% assign emptyObject = emptyObject | addProp: "key2", "value2" %}
+```
+
