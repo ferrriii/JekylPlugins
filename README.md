@@ -2,7 +2,7 @@
 Some plugins for [Jekyll](https://jekyllrb.com/) (liquid)
 
 ## Filter to Add Property to Hash (`addProp.rb`)
-Jekyl (liquid) doesn't allow to to assign a value to a new property of any hash like posts.
+Jekyll (liquid) doesn't allow to assign a value to a new property of any hashes like posts.
 Use  `addProp.rb` to be able to add keys to hashes.
 
 Syntax:
