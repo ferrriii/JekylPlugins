@@ -18,3 +18,18 @@ Create an object with custom key values.
 {% assign emptyObject = emptyObject | addProp: "key2", "value2" %}
 ```
 
+## Stable Sort Filter (`stable-sort.rb`)
+Stable sort enables you to chain multiple sort conditions But the default `sort` in Jekyll is unstable.
+you can use `stable-sort.rb` to have a stable sort.
+
+Syntax:
+```
+sort_stable: key_to_sort_by
+```
+
+Usage example:
+Sort posts by category then sort by author.
+```
+{% assign orderedPosts = site.posts| sort_stable: "category" | sort_stable: "author"  %}
+
+```
